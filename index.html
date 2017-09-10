@@ -1,0 +1,45 @@
+<html>
+<head>
+    <script src="js/compare.js"></script>
+    <script src="js/libde265-selector.js"></script>
+    <script src="js/heif-api.js"></script>
+    <script src="js/heif-extension.js"></script>
+    <script src="js/hevc-decoder.js"></script>
+    <script src="js/image-provider.js"></script>
+</head>
+<body onload="pageLoaded()">
+<div class="main">
+<ul>
+<li>1.jpg: <a href='/?file=1.jpg'>original jpeg</a> - <a href='/?file=1.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=1.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>2.jpg: <a href='/?file=2.jpg'>original jpeg</a> - <a href='/?file=2.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=2.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>3.jpg: <a href='/?file=3.jpg'>original jpeg</a> - <a href='/?file=3.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=3.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>4.jpg: <a href='/?file=4.jpg'>original jpeg</a> - <a href='/?file=4.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=4.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>5.jpg: <a href='/?file=5.jpg'>original jpeg</a> - <a href='/?file=5.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=5.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>beautiful_nature_landscape_01_hd_pictures.jpg: <a href='/?file=beautiful_nature_landscape_01_hd_pictures.jpg'>original jpeg</a> - <a href='/?file=beautiful_nature_landscape_01_hd_pictures.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=beautiful_nature_landscape_01_hd_pictures.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>beautiful_nature_landscape_02_hd_picture.jpg: <a href='/?file=beautiful_nature_landscape_02_hd_picture.jpg'>original jpeg</a> - <a href='/?file=beautiful_nature_landscape_02_hd_picture.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=beautiful_nature_landscape_02_hd_picture.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>beautiful_nature_landscape_03_hd_picture.jpg: <a href='/?file=beautiful_nature_landscape_03_hd_picture.jpg'>original jpeg</a> - <a href='/?file=beautiful_nature_landscape_03_hd_picture.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=beautiful_nature_landscape_03_hd_picture.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>beautiful_nature_landscape_04_hd_picture.jpg: <a href='/?file=beautiful_nature_landscape_04_hd_picture.jpg'>original jpeg</a> - <a href='/?file=beautiful_nature_landscape_04_hd_picture.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=beautiful_nature_landscape_04_hd_picture.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>beautiful_nature_landscape_05_hd_picture.jpg: <a href='/?file=beautiful_nature_landscape_05_hd_picture.jpg'>original jpeg</a> - <a href='/?file=beautiful_nature_landscape_05_hd_picture.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=beautiful_nature_landscape_05_hd_picture.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>cat-111793_1920.jpg: <a href='/?file=cat-111793_1920.jpg'>original jpeg</a> - <a href='/?file=cat-111793_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=cat-111793_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>cat-1455468_1920.jpg: <a href='/?file=cat-1455468_1920.jpg'>original jpeg</a> - <a href='/?file=cat-1455468_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=cat-1455468_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>cat-1647775_1920.jpg: <a href='/?file=cat-1647775_1920.jpg'>original jpeg</a> - <a href='/?file=cat-1647775_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=cat-1647775_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>cat-1817970_1920.jpg: <a href='/?file=cat-1817970_1920.jpg'>original jpeg</a> - <a href='/?file=cat-1817970_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=cat-1817970_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>cat-1992140_1920.jpg: <a href='/?file=cat-1992140_1920.jpg'>original jpeg</a> - <a href='/?file=cat-1992140_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=cat-1992140_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>cat-914110_1920.jpg: <a href='/?file=cat-914110_1920.jpg'>original jpeg</a> - <a href='/?file=cat-914110_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=cat-914110_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>kitten-227009_1920.jpg: <a href='/?file=kitten-227009_1920.jpg'>original jpeg</a> - <a href='/?file=kitten-227009_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=kitten-227009_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>kittens-555822_1920.jpg: <a href='/?file=kittens-555822_1920.jpg'>original jpeg</a> - <a href='/?file=kittens-555822_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=kittens-555822_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+<li>kittens-cat-cat-puppy-rush-45170.jpeg: <a href='/?file=kittens-cat-cat-puppy-rush-45170.jpeg'>original jpeg</a> - <a href='/?file=kittens-cat-cat-puppy-rush-45170.jpeg&q=90'>jpeg quality 90</a> - <a href='/?file=kittens-cat-cat-puppy-rush-45170.jpeg&q=90&f=webp'>webp quality 90</a></li>
+<li>kitty-551554_1920.jpg: <a href='/?file=kitty-551554_1920.jpg'>original jpeg</a> - <a href='/?file=kitty-551554_1920.jpg&q=90'>jpeg quality 90</a> - <a href='/?file=kitty-551554_1920.jpg&q=90&f=webp'>webp quality 90</a></li>
+
+</ul>
+<h4>HEIF</h4>
+<p>Filesize: <span id="heif-filesize"></span></p>
+<div id="heif-container"></div>
+<h4>JPEG or WEBP</h4>
+<p> Filesize: <span id="jpeg-filesize"></span></p>
+<div id="jpeg-contaniner">
+<img onerror="errorLoadingImage(this, 'jpeg-filesize')" onload="getSizeOfImage(this.src, document.getElementById('jpeg-filesize'),true)" id="jpeg-img" src="index.html">
+</div>
+</div>
+</body>
+</html>

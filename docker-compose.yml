@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nginx:
+    image: nginx:latest
+    volumes:
+      - .:/usr/share/nginx/html
+    ports:
+      - 8080:80
+
+  gpac:
+    build: .
