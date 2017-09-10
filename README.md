@@ -1,4 +1,4 @@
-# JPEG to HEIF file
+# JPEG image to HEIF image
 
 ### This is just a POC repository
 

@@ -68,7 +68,7 @@ function onFileChanged() {
     return;
   }
 
-  var urlbase = "/images/";
+  var urlbase = "./images/";
   var urlappend = "";
 
   if (window.location.href.indexOf("f=webp") > -1){
