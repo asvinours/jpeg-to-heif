@@ -1,4 +1,7 @@
 HEIF_OBJECT = null;
+var host = "https://asvinours.github.io/jpeg-to-heif"
+// Uncomment the following line for local usage
+//var host = ""
 var hash = "kitty-551554_1920.jpg";
 var cacheBuster = Math.round(new Date().getTime() / 1000,0);
 function getSizeOfImage(src, element, addAcceptHeader) {
@@ -68,7 +71,7 @@ function onFileChanged() {
     return;
   }
 
-  var urlbase = "./images/";
+  var urlbase = host + "/images/";
   var urlappend = "";
 
   if (window.location.href.indexOf("f=webp") > -1){
